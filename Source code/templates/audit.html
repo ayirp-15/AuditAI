@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('https://www.seotonic.com/assets/uploads/2020/05/9-01-750x465.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(145, 150, 243, 0.8);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #000;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #0e12e9;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .button {
+            display: inline-block;
+            padding: 24px 54px;
+            background-color: rgba(197, 29, 29, 0.916);;
+            color: #ffffff;
+            font-size: 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin-top: 60px;
+        }
+
+        .button:hover {
+            background-color: #0eed5c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Audit Form</h1>
+        <form action="/riskpred" method="POST">
+            <b><label for="Sector_score">Sector Score</label>
+            <input type="text" id="Sector_score" name="Sector_score" required>
+
+            <label for="PARA_A">Para A</label>
+            <input type="text" id="PARA_A" name="PARA_A" required>
+
+            <label for="RISK_A">Risk A</label>
+            <input type="text" id="RISK_A" name="RISK_A" required>
+
+            <label for="PARA_B">Para B</label>
+            <input type="text" id="PARA_B" name="PARA_B" required>
+
+            <label for="RISK_B">Risk B</label>
+            <input type="text" id="RISK_B" name="RISK_B" required>
+
+            <label for="numbers">Numbers</label>
+            <input type="text" id="numbers" name="numbers" required>
+
+            <label for="Money_Value">Money Value</label>
+            <input type="text" id="Money_Value" name="Money_Value" required>
+
+            <label for="District_Loss">District Loss</label>
+            <input type="text" id="District_Loss" name="District_Loss" required>
+
+            <label for="History">History</label>
+            <input type="text" id="History" name="History" required>
+
+            <label for="Inherent_Risk">Inherent Risk</label>
+            <input type="text" id="Inherent_Risk" name="Inherent_Risk" required>
+
+            <label for="Audit_Risk">Audit Risk</label>
+            <input type="text" id="Audit_Risk" name="Audit_Risk" required>
+</b>
+<a href="/result.html" class="button"><strong>Predict</strong></a>
+<!-- <input type="submit" value="Predict"> -->
+        </form>
+    </div>
+</body>
+</html>
